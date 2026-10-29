@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+BUILD_DIR="$(mktemp -d)"
+trap 'rm -rf "$BUILD_DIR"' EXIT
+
+cd "$ROOT_DIR"
+cp ./*.html "$BUILD_DIR"/
+cp -R css js "$BUILD_DIR"/
+
+[[ -f "$BUILD_DIR/index.html" ]] || {
+  echo "Expected static build output at $BUILD_DIR" >&2
+  exit 1
+}
+
+figma make deploy-preview --build-dir "$BUILD_DIR"
