@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias deportivas · Marcador</title>
+  <meta name="description" content="Noticias de fútbol, baloncesto, tenis y Fórmula 1.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page">
+  <div class="container">
+    <header class="site-header">
+      <a href="index.html" class="logo">Marcador<span>.</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="categoria-futbol.html">Fútbol</a></li>
+          <li><a href="categoria-baloncesto.html">Baloncesto</a></li>
+          <li><a href="categoria-tenis.html">Tenis</a></li>
+          <li><a href="categoria-f1.html">Fórmula 1</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+        <a href="#newsletter" class="btn">Suscríbete</a>
+        <button class="icon-btn menu-toggle" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero__title">Las noticias del <strong>deporte</strong> que importan, contadas <strong>con contexto</strong> <span class="arrow">→</span> <a href="#ultimas" class="btn btn--dark btn--sm">Ver últimas</a></h1>
+      <div class="readers">
+        <div class="avatars"><span class="avatar" style="background:#ff6a2b" >LM</span><span class="avatar" style="background:#3f8fd8" >DR</span><span class="avatar" style="background:#7cc79a" >SV</span></div>
+        <strong>120K+</strong>
+        <span>Lectores al mes</span>
+      </div>
+    </section>
+
+    <section class="featured-grid" aria-label="Destacadas">
+        <article class="feature-card">
+          <div class="media media--futbol" role="img" aria-label="Imagen de Fútbol"></div>
+          <button class="feature-card__like" aria-label="Guardar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+          <div class="feature-card__cta"><a href="articulo.html" class="btn btn--sm">Leer ahora</a></div>
+          <div class="feature-card__caption"><small>Liga Promerica</small>El clásico se decide en el descuento</div>
+        </article>
+        <article class="feature-card">
+          <div class="media media--tenis" role="img" aria-label="Imagen de Tenis"></div>
+          <button class="feature-card__like" aria-label="Guardar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+          <div class="feature-card__cta"><a href="articulo.html" class="btn btn--sm">Leer ahora</a></div>
+          <div class="feature-card__caption"><small>Grand Slam</small>Una final de cinco sets para la historia</div>
+        </article>
+        <article class="feature-card">
+          <div class="media media--baloncesto" role="img" aria-label="Imagen de Baloncesto"></div>
+          <button class="feature-card__like" aria-label="Guardar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+          <div class="feature-card__cta"><a href="articulo.html" class="btn btn--sm">Leer ahora</a></div>
+          <div class="feature-card__caption"><small>NBA</small>El triple que cambió la temporada</div>
+        </article>
+    </section>
+
+    <div class="slider-bar">
+      <div class="slider-bar__track"></div>
+      <span class="btn btn--sm">Destacadas</span>
+      <button class="icon-btn" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="pill">Lo más leído</span>
+          <h2 class="section-title">Tendencias de<br>la semana</h2>
+        </div>
+        <div class="section-head__aside">
+          <p>Las historias que más conversación generaron entre nuestros lectores esta semana.</p>
+          <a href="categoria-futbol.html" class="btn btn--sm">Ver todo</a>
+        </div>
+      </div>
+      <div class="carousel-arrows">
+        <button class="icon-btn" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button>
+        <button class="icon-btn" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+      </div>
+      <div class="trending-grid">
+        <article class="trend-card">
+          <a href="articulo.html">
+            <div class="media media--futbol" role="img" aria-label="Imagen de Fútbol"></div>
+            <div class="trend-card__row">El Saprissa remonta en el último minuto y sigue líder del torneo<span>5 min</span></div>
+            <div class="trend-card__meta">Fútbol · 28 oct 2026</div>
+          </a>
+        </article>
+        <article class="trend-card">
+          <a href="articulo.html">
+            <div class="media media--f1" role="img" aria-label="Imagen de Fórmula 1"></div>
+            <div class="trend-card__row">Estrategia a una parada: así se ganó el GP de México<span>8 min</span></div>
+            <div class="trend-card__meta">Fórmula 1 · 26 oct 2026</div>
+          </a>
+        </article>
+        <article class="trend-card">
+          <a href="articulo.html">
+            <div class="media media--baloncesto" role="img" aria-label="Imagen de Baloncesto"></div>
+            <div class="trend-card__row">Cinco claves tácticas del inicio perfecto de los Celtics<span>7 min</span></div>
+            <div class="trend-card__meta">Baloncesto · 27 oct 2026</div>
+          </a>
+        </article>
+        <article class="trend-card">
+          <a href="articulo.html">
+            <div class="media media--tenis" role="img" aria-label="Imagen de Tenis"></div>
+            <div class="trend-card__row">La nueva generación que ya domina el circuito ATP<span>6 min</span></div>
+            <div class="trend-card__meta">Tenis · 27 oct 2026</div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="why">
+        <div class="media media--baloncesto" role="img" aria-label="Imagen de baloncesto"></div>
+        <div class="why__panel">
+          <h2>Por qué Marcador</h2>
+          <p>Hacemos periodismo deportivo con datos, fuentes verificadas y voces que conocen cada disciplina desde adentro.</p>
+          <div class="accordion">
+            <details><summary>Datos verificados</summary><p>Cada estadística se contrasta con fuentes oficiales antes de publicarse.</p></details>
+            <details><summary>Cobertura en vivo</summary><p>Minuto a minuto de los partidos y carreras más importantes.</p></details>
+            <details open><summary>Análisis a fondo</summary><p>Más allá del resultado: táctica, estrategia y contexto.</p></details>
+            <details><summary>Voces expertas</summary><p>Columnistas con años en cada deporte.</p></details>
+          </div>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <a href="categoria-futbol.html" class="cat-tile cat-tile--peach">
+          <div>
+            <h3>Fútbol</h3>
+            <p>Liga, Champions y selecciones</p>
+          </div>
+          <span class="btn btn--sm">Ver sección</span>
+        </a>
+        <a href="categoria-baloncesto.html" class="cat-tile">
+          <div>
+            <h3>Baloncesto</h3>
+            <p>NBA, Euroliga y FIBA</p>
+          </div>
+          <span class="btn btn--sm">Ver sección</span>
+        </a>
+        <a href="categoria-tenis.html" class="cat-tile">
+          <div>
+            <h3>Tenis</h3>
+            <p>ATP, WTA y Grand Slams</p>
+          </div>
+          <span class="btn btn--sm">Ver sección</span>
+        </a>
+        <a href="categoria-f1.html" class="promo-tile">
+          <div class="media media--f1" role="img" aria-label="Imagen de Fórmula 1"></div>
+          <span class="promo-tile__text">Temporada<br>F1 2026</span>
+          <span class="burst">GP<br>EN VIVO</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="newsletter">
+      <div class="banner">
+        <div>
+          <h2>El resumen deportivo<br>del día, en tu correo</h2>
+          <p>Resultados, análisis y lo que no te puedes perder. Cada mañana, en menos de cinco minutos de lectura.</p>
+          <form class="banner__form" onsubmit="event.preventDefault()">
+            <label class="sr-only" for="nl-email">Correo electrónico</label>
+            <input id="nl-email" type="email" placeholder="tu@correo.com" required>
+            <button class="btn btn--dark" type="submit">Suscribirme</button>
+          </form>
+        </div>
+        <div class="banner__art" aria-hidden="true">
+          <span class="banner__circle banner__circle--peach"></span>
+          <span class="banner__circle banner__circle--blue"></span>
+          <span class="banner__ball media media--futbol"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ultimas">
+      <h2 class="section-title">Últimas noticias</h2>
+      <p style="font-size:var(--fs-small);color:var(--color-text-muted);margin:8px 0 20px;max-width:300px">Filtra por deporte para ver solo lo que te interesa.</p>
+      <div class="filters">
+        <button class="pill is-active" data-filter="all">Todas</button>
+        <button class="pill" data-filter="futbol">Fútbol</button>
+        <button class="pill" data-filter="baloncesto">Baloncesto</button>
+        <button class="pill" data-filter="tenis">Tenis</button>
+        <button class="pill" data-filter="f1">Fórmula 1</button>
+      </div>
+      <div class="post-grid" data-filterable>
+        <article class="post-card" data-cat="futbol">
+          <a href="articulo.html">
+            <div class="media media--futbol" role="img" aria-label="Imagen de Fútbol"></div>
+            <div class="post-card__body">
+              <span class="post-card__cat">Fútbol</span>
+              <h3 class="post-card__title">El Saprissa remonta en el último minuto y sigue líder del torneo</h3>
+              <div class="post-card__meta"><span>Lucía Méndez</span><span>28 oct 2026 · 5 min</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="post-card" data-cat="baloncesto">
+          <a href="articulo.html">
+            <div class="media media--baloncesto" role="img" aria-label="Imagen de Baloncesto"></div>
+            <div class="post-card__body">
+              <span class="post-card__cat">Baloncesto</span>
+              <h3 class="post-card__title">Cinco claves tácticas del inicio perfecto de los Celtics</h3>
+              <div class="post-card__meta"><span>Diego Rojas</span><span>27 oct 2026 · 7 min</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="post-card" data-cat="tenis">
+          <a href="articulo.html">
+            <div class="media media--tenis" role="img" aria-label="Imagen de Tenis"></div>
+            <div class="post-card__body">
+              <span class="post-card__cat">Tenis</span>
+              <h3 class="post-card__title">La nueva generación que ya domina el circuito ATP</h3>
+              <div class="post-card__meta"><span>Sofía Vargas</span><span>27 oct 2026 · 6 min</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="post-card" data-cat="f1">
+          <a href="articulo.html">
+            <div class="media media--f1" role="img" aria-label="Imagen de Fórmula 1"></div>
+            <div class="post-card__body">
+              <span class="post-card__cat">Fórmula 1</span>
+              <h3 class="post-card__title">Estrategia a una parada: así se ganó el GP de México</h3>
+              <div class="post-card__meta"><span>Marco Solís</span><span>26 oct 2026 · 8 min</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="post-card" data-cat="futbol">
+          <a href="articulo.html">
+            <div class="media media--futbol" role="img" aria-label="Imagen de Fútbol"></div>
+            <div class="post-card__body">
+              <span class="post-card__cat">Fútbol</span>
+              <h3 class="post-card__title">Por qué la presión alta volvió a estar de moda en Europa</h3>
+              <div class="post-card__meta"><span>Lucía Méndez</span><span>25 oct 2026 · 6 min</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="post-card" data-cat="baloncesto">
+          <a href="articulo.html">
+            <div class="media media--baloncesto" role="img" aria-label="Imagen de Baloncesto"></div>
+            <div class="post-card__body">
+              <span class="post-card__cat">Baloncesto</span>
+              <h3 class="post-card__title">El novato que está rompiendo todos los récords de asistencias</h3>
+              <div class="post-card__meta"><span>Diego Rojas</span><span>24 oct 2026 · 4 min</span></div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section columnists">
+      <h2 class="section-title">Nuestros columnistas</h2>
+      <div class="columnists__track">
+          <article class="quote-card">
+            <div class="quote-card__head">
+              <span class="avatar" style="background:#ff6a2b" >LM</span>
+              <div><strong>Lucía Méndez</strong><span>Columna semanal</span></div>
+              <span class="stars" aria-label="Valoración 4 de 5">★★★★</span>
+            </div>
+            <h3>La pelota no se mancha</h3>
+            <p>Escribo sobre el fútbol que se juega en los barrios y el que se decide en los despachos.</p>
+          </article>
+          <article class="quote-card">
+            <div class="quote-card__head">
+              <span class="avatar" style="background:#1c1a38" >MS</span>
+              <div><strong>Marco Solís</strong><span>Columna semanal</span></div>
+              <span class="stars" aria-label="Valoración 4 de 5">★★★★</span>
+            </div>
+            <h3>Vuelta rápida</h3>
+            <p>Cada lunes desmonto la estrategia del último Gran Premio: neumáticos, paradas y radio.</p>
+          </article>
+      </div>
+      <div class="columnists__nav">
+        <button class="icon-btn" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button>
+        <button class="icon-btn" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">Marcador<span>.</span></a>
+          <p>Noticias deportivas con contexto. Fútbol, baloncesto, tenis y Fórmula 1, todos los días.</p>
+          <p>San José, Costa Rica<br>redaccion@marcador.news</p>
+        </div>
+        <div>
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="categoria-futbol.html">Fútbol</a></li>
+            <li><a href="categoria-baloncesto.html">Baloncesto</a></li>
+            <li><a href="categoria-tenis.html">Tenis</a></li>
+            <li><a href="categoria-f1.html">Fórmula 1</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Columnistas</h4>
+          <ul>
+            <li><a href="autor.html">Lucía Méndez</a></li>
+            <li><a href="autor.html">Diego Rojas</a></li>
+            <li><a href="autor.html">Sofía Vargas</a></li>
+            <li><a href="autor.html">Marco Solís</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Marcador</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Equipo editorial</a></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X / Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Marcador. Todos los derechos reservados.</span>
+        <nav aria-label="Legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+          <a href="#">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
