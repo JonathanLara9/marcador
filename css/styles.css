@@ -184,7 +184,7 @@ button { font: inherit; cursor: pointer; }
   border-radius: 50%;
   border: 2px solid #fff;
   display: grid; place-items: center;
-  font-size: var(--fs-xs); font-weight: 600; color: #fff;
+  font-size: var(--fs-xs); font-weight: 600; color: var(--color-surface);
   margin-left: -10px;
 }
 .avatar:first-child { margin-left: 0; }
@@ -241,7 +241,7 @@ button { font: inherit; cursor: pointer; }
 .feature-card__like svg { width: 16px; height: 16px; }
 
 .feature-card__cta { position: absolute; top: 16px; right: 16px; }
-.feature-card__cta .btn { background: rgba(255,255,255,.25); border-color: rgba(18,18,26,.4); color: var(--color-surface); backdrop-filter: blur(4px); }
+.feature-card__cta .btn { background: rgba(255,255,255,.25); border-color: rgba(18,18,26,.4); backdrop-filter: blur(4px); }
 
 .feature-card__caption {
   position: absolute; left: 16px; bottom: 16px;
