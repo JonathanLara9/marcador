@@ -175,7 +175,7 @@ button { font: inherit; cursor: pointer; }
 }
 .hero__title strong { font-weight: 600; }
 .hero__title .arrow { display: inline-block; font-weight: 300; margin: 0 12px; }
-.hero__title .btn { font-size: var(--fs-button); letter-spacing: normal; }
+.hero__title .btn { font-size: var(--fs-button); font-weight: 700; letter-spacing: normal; }
 
 .readers { text-align: center; flex-shrink: 0; }
 .avatars { display: flex; justify-content: center; margin-bottom: 8px; }
