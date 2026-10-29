@@ -29,6 +29,7 @@
   --fs-h2: clamp(1.6rem, 3vw, 2.1rem);
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+  --fs-button: 0.875rem;
   --fs-small: 0.8125rem;
   --fs-xs: 0.75rem;
 
@@ -174,6 +175,7 @@ button { font: inherit; cursor: pointer; }
 }
 .hero__title strong { font-weight: 600; }
 .hero__title .arrow { display: inline-block; font-weight: 300; margin: 0 12px; }
+.hero__title .btn { font-size: var(--fs-button); letter-spacing: normal; }
 
 .readers { text-align: center; flex-shrink: 0; }
 .avatars { display: flex; justify-content: center; margin-bottom: 8px; }
@@ -239,7 +241,7 @@ button { font: inherit; cursor: pointer; }
 .feature-card__like svg { width: 16px; height: 16px; }
 
 .feature-card__cta { position: absolute; top: 16px; right: 16px; }
-.feature-card__cta .btn { background: rgba(255,255,255,.25); border-color: rgba(18,18,26,.4); backdrop-filter: blur(4px); }
+.feature-card__cta .btn { background: rgba(255,255,255,.25); border-color: rgba(18,18,26,.4); color: var(--color-surface); backdrop-filter: blur(4px); }
 
 .feature-card__caption {
   position: absolute; left: 16px; bottom: 16px;
